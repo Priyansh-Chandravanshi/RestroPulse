@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 96" role="img" aria-labelledby="title desc">
+  <title id="title">RestroPulse</title>
+  <desc id="desc">Restaurant plate with a rising market trend line</desc>
+  <rect width="320" height="96" rx="18" fill="#15344f"/>
+  <circle cx="52" cy="48" r="27" fill="none" stroke="#f4f8fb" stroke-width="4"/>
+  <circle cx="52" cy="48" r="17" fill="none" stroke="#57c5ae" stroke-width="3"/>
+  <path d="M38 55l9-8 7 4 12-15" fill="none" stroke="#57c5ae" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M64 36h4v4" fill="none" stroke="#57c5ae" stroke-width="3" stroke-linecap="round"/>
+  <text x="94" y="45" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">RestroPulse</text>
+  <text x="95" y="66" fill="#bcd0df" font-family="Segoe UI, Arial, sans-serif" font-size="10" letter-spacing="1.2">RESTAURANT MARKET INTELLIGENCE</text>
+</svg>

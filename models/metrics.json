@@ -1,0 +1,11 @@
+{
+  "train_rows": 29511,
+  "test_rows": 7378,
+  "mae": 0.5987047054267286,
+  "rmse": 0.7574721651390153,
+  "r2": 0.09016905849781398,
+  "baseline_mae": 0.6118189211168338,
+  "mae_improvement_vs_baseline_pct": 2.143479914966682,
+  "silhouette_score": 0.3016208101708706,
+  "cluster_count": 4
+}
