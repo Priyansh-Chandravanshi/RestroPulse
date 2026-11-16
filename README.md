@@ -25,6 +25,12 @@ py -3.14 -m venv .venv
 
 Streamlit prints a local URL, usually `http://localhost:8501`.
 
+For notebooks and tests, install the development tools as well:
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install -r requirements-dev.txt
+```
+
 Run the analysis notebook:
 
 ```powershell
@@ -80,6 +86,7 @@ These experiments do not establish future rating accuracy: the dataset has no re
 ```text
 app.py
 requirements.txt
+requirements-dev.txt
 README.md
 LICENSE.md
 data/
@@ -103,4 +110,12 @@ tests/
 
 ## Streamlit deployment
 
-Deploy the project root as the Streamlit application, set `app.py` as the entry point, and include `requirements.txt` and `data/cleaned.csv` in the deployed repository. The model can be trained at runtime by the dashboard; committing `models/model.pkl` is optional. Do not deploy private or licensed data without checking its applicable terms.
+The public GitHub repository is ready for Community Cloud. In Streamlit Community Cloud, create an app with:
+
+- Repository: `Priyansh-Chandravanshi/RestroPulse`
+- Branch: `main`
+- Main file path: `app.py`
+- Python version: `3.14` (Advanced settings)
+- App URL: `restropulse` if available
+
+The runtime `requirements.txt` contains only dashboard dependencies. The app reads the included `data/cleaned.csv` and trains its models at runtime. Community Cloud needs access to the public GitHub repository; deployment also requires signing in and connecting GitHub to the Streamlit workspace. See the [Community Cloud deployment guide](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/deploy) and [GitHub connection guide](https://docs.streamlit.io/deploy/streamlit-community-cloud/get-started/connect-your-github-account).
